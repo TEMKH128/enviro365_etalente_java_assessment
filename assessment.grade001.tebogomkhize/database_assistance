@@ -1,0 +1,35 @@
+### Default Values:
+
+INSERT INTO investors (investorID, name, address, contact, age)
+VALUES ('01', 'John Doe', '2059 Hull Park, Springs, Johannessburg', '0821234568', '70');
+
+INSERT INTO investors (investorID, name, address, contact, age)
+VALUES ('02', 'Jolly Ndlovu', '2059 Dubane Ave, Durban', '0734321658', '40');
+
+INSERT INTO products(name, productID, investor_investorID, type, balance)
+VALUES ('investec retire', '01', '01', 'RETIREMENT', 400000);
+  
+INSERT INTO products(name, productID, investor_investorID, type, balance)
+VALUES ('ABSA Savings', '03', '01', 'SAVINGS', 100000);
+  
+INSERT INTO products(name, productID, investor_investorID, type, balance)
+VALUES ('FNB retire', '02', '02', 'RETIREMENT', 180000);
+
+INSERT INTO transactions (type, product_productID, date, amount)
+VALUES ('Withdrawal', '01', '2023-01-28', 1000.0);
+
+INSERT INTO transactions (type, product_productID, date, amount)
+VALUES ('Withdrawal', '01', '2024-01-22', 2000.0);
+
+INSERT INTO transactions (type, product_productID, date, amount)
+VALUES ('Withdrawal', '01', '2024-01-05', 5000.0);
+
+INSERT INTO transactions (type, product_productID, date, amount)
+VALUES ('Withdrawal', '03', '2023-11-22', 15000.0);
+
+
+### Viewing Tables:
+
+SELECT * from investors;
+SELECT * from products;
+SELECT * from transactions;
